@@ -7,9 +7,11 @@ body{
     padding:0;
     font-family:'Montserrat', sans-serif;
     background-color: #C62368;
+    overflow-x:hidden;
 }
 main{
     margin-left: 10rem;
+    width:100%;
 }
 .navbar{
     display: flex;
@@ -30,7 +32,7 @@ main{
     align-items: center;
 }
 .navbar li{
-    width:90%;
+    width:100%;
 }
 .navbar a{
     display: flex;
@@ -43,7 +45,7 @@ main{
 .navbar span{
     display:none;
     margin-left: 2rem;
-    margin-right:2rem;
+    margin-right:2rem; 
 }
 .navbar svg{
     min-width: 2rem;
@@ -71,7 +73,6 @@ section{
     display:flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
     padding: 100px 20vw;
     margin:0 auto;
     justify-content: flex-start;
@@ -79,17 +80,22 @@ section{
 }  
 .bottom{
     background-color: #C62368;
-    width:100%;
-    aspect-ratio: 2/1;
+    
+}
+.middle{
+    background-color: #C62368;
+    
+    aspect-ratio: 2/1; 
 }
 .top{
-    aspect-ratio: 2/1;
+    aspect-ratio: 2/1; 
     background-color: #004CBB;
-    width:100%;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(resources/layered-waves-haikei.svg);
+    display:flex;
 }
 .banner{
     flex-wrap: wrap;
@@ -100,47 +106,89 @@ section{
     font-size: 1.5rem ;
     text-align: center;
     margin-top:-5px;
+    flex-wrap: wrap;
 }
-.contact{
+.contact, .portfolio{
     font-size: 2rem ;
     text-align: center;
+}
+input{
+    margin-bottom:10px;
+    min-width:300px;
+}
+form #submit{
+    font-family:'Montserrat', sans-serif ;
+    font-weight:bold;
+    padding:5px;
+}
+form #text{
+    font-family:'Montserrat', sans-serif ;
+    font-weight:bold;
+    padding:5px;
 }
 footer{
     text-align: left;
 }
-/*small*/
-@media only screen and (max-width:600px){
+/* medium*/
+@media only screen and (max-width:800px){
   .navbar{
       bottom:0;
-      width:100vh;
+      width:100%;
       height:10rem;
+      
   }  
   .navbar ul{
       flex-direction: row;
 
   }
+  .navbar a:hover{
+    width:90%;
+    }
   .navbar a{
       justify-content: center;
-      width:80%;
+      width:70%;
   }
-  .navbar:hover body{
-    margin-bottom: 10rem;
-    background-color: white;
+  .top{
+      bottom:100px;
+  }
+  .intro{
+      display:none;
+  }
+  .navbar:hover {
+    width:100%;
   }
   main{
       margin:0;
     }
-    .banner{
-        font-size: 2rem;
-        text-align:center;
-    }
-    .intro {
-        font-size: 1rem ;
-        text-align: center;
-        margin-top:-5px;
-    }
-    .contact{
-        font-size: 1rem ;
-    text-align: center;
+   
 }
+/* small */
+
+@media only screen and(max-width:400px){
+.navbar{
+    bottom:0;
+    width:100%;
+    height:10rem;
+    
+}  
+.navbar ul{
+    flex-direction: row;
+
+}
+.navbar a{
+    justify-content: center;
+    width:90%;
+}
+.navbar:hover {
+    width:100%;
+  }
+.top{
+    bottom:100px;
+}
+.intro{
+    display:none;
+}
+main{
+    margin:0;
+  }
 }

@@ -14,19 +14,19 @@
             <nav class="navbar">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#intro">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#portfolio">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" class="svg-inline--fa fa-book-open fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg>                            
                             <span>Portfolio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#contact">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mail-bulk" class="svg-inline--fa fa-mail-bulk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"></path></svg>                            
                             <span>Contact</span>
                         </a>
@@ -35,12 +35,27 @@
             </nav>
         </header>
         <main >
-            <section class="top">
+            <section class="top" id="intro">
                 <h1 class="banner">Aisha Williams</h1>
-                <h2 class="intro">Web developer in the making</h2>
+                <h2 class="intro" >Web developer in the making</h2>
+               
+            </section>
+            <section class="middle" id="portfolio">
+                <h4 class="portfolio" >Portfolio</h4>
+                <ol>
+                    <li>To be added</li>
+                    <li>To be added</li>
+                    <li>To be added</li>
+                </ol>
             </section>
             <section class="bottom">
-                <h4 class="contact">Contact</h4>
+                <h4 class="contact" id="contact">Contact</h4>
+                <form action="#" method="GET">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <textarea id="text" name="message" rows="10" cols="39">Enter your message here</textarea><br>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
             </section> 
            
         </main>
